@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+  }
+  
+  body {
+    overflow-x: hidden;
+  }
+  
+  .container {
+    width: 100%;
+    height: 100vh;
+    background-image: url(plane5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .runway {
+    width: 100%;
+    height: 200px;
+    /*background-image: url(plane5.jpg);*/
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  
+  .airplane {
+    width: 320px;
+    position: absolute;
+    bottom: 150px;
+    right: -200px;
+    animation: plane 4s linear infinite;
+    transform-origin: 100% 50%;
+    z-index: 10;
+    opacity: 0.7;
+  }
+  
+  @keyframes plane {
+    0% {
+      transform: translateX(0px) translateY(0px) rotate(0deg);
+    }
+  
+    30% {
+      transform: translateX(-500px) translateY(0px) rotate(0deg);
+    }
+  
+    100% {
+      transform: translateX(-1500px) translateY(-200px) rotate(20deg);
+    }
+  }
+  
+  .menu {
+    height: 75px;
+    width: 90%;
+    position: absolute;
+    padding: 0 30px;
+    top: 0;
+    left: 5%;
+    background: orange;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.23);
+  }
+  
+  .nav {
+    display: flex;
+    list-style: none;
+  }
+  
+  .nav li:not(:last-child) {
+    margin-right: 30px;
+  }
+  
+  .logo h2 {
+    font-size: 28px;
+    font-weight: 400;
+    color: white;
+  }
+  
+  .nav li a {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .nav li ul{
+    list-style: none;
+  }
+  
+  .content {
+    width: 75%;
+    height: 500px;
+    position: absolute;
+    top: 18%;
+    left: 12.5%;
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.884);
+    backdrop-filter: blur(5px);
+    padding: 12px;
+    border-radius: 20px;
+  }
+  
+  .hero-heading {
+    margin: 10px auto;
+    width: 40%;
+    background-color: orange;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 12px;
+    color: #fff;
+  }
+  
+  .hero-heading h2 {
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 3px;
+  }
+  
+  .row {
+    width: 100%;
+    height: 280px;
+    margin: 30px 0;
+    background: rgb(209, 131, 13);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .col {
+    width: 50%;
+    padding: 20px;
+  }
+  
+  .destinations {
+    line-height: 32px;
+  }
+  
+  .destinations h3 {
+    font-size: 20px;
+    font-weight: 400;
+    color: orange;
+    background: #fff;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .destinations ul {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 20px;
+  }
+  
+  .banner img {
+    width: 80%;
+    margin: 10px auto;
+    display: block;
+    border-radius: 30px;
+  }
+  
+  .btn {
+    padding: 10px 18px;
+    background: orange;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    border: none;
+    font-size: 20px;
+    margin: 0 auto;
+    cursor: pointer;
+    display: block;
+  }
+  .btn a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  @media (max-width: 768px) {
+    body{
+      background-image: url(plane5.jpg);
+    }
+  
+    .airplane {
+      width: 180px;
+    }
+  
+    .nav {
+      display: none;
+    }
+  
+    .content {
+      width: 90%;
+      height: 700px;
+      left: 5%;
+      top: 15%;
+    }
+  
+    .hero-heading {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .row {
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  
+    .col {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  .banner img {
+      height: 50%;
+      width: 30%;
+      border-radius: 10px;
+      margin-top: 40px;
+    }
+  }
+.nav li ul li{
+ list-style: none;
+ display: none;
+ 
+}
+/*.nav li ul li a{
+  top: 80px;
+  left: 0;
+}*/
+.nav li:hover ul li{
+   display: block;
+}
+.icon{
+  width: 100%;
+  /*height: 100vh;*/
+  align-items: center;
+  flex-direction: column;
+  /*justify-content: center;*/
+  display: flex;
+}
+h1{
+  font-size: 30px;
+  margin-bottom: 40px;
+  margin-top: 10px;
+  color: orangered;
+}
+.social{
+  display: flex;
+}
+.social a{
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.5);
+  margin: 0 30px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.5s;
+
+}
+.social a .fa-brands{
+  font-size: 30px;
+  line-height: 80px;
+  position: relative;
+  z-index: 10;
+  transition: 0.5s;
+}
+.social a:after{
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: -90px;
+  left: 0;
+  background: linear-gradient(-45deg, #ed1c94, #ffec17);
+  position: absolute;
+  transition: 0.5s;
+}
+.social a:hover:after{
+  top: 0;
+}
+.social a:hover .fa-brands{
+  color: white;
+}
+.social a:hover{
+  transform: translate(-10px);
+}

@@ -1,0 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  .End .logo{
+    width: 10px;
+    height: 20px;
+    background-color: blue;
+    justify-content: center;
+  }

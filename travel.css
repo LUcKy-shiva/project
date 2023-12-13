@@ -1,0 +1,112 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-image:url("travel.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+h1{
+    color: orange;
+    text-align: center;
+    padding: bottom 5px;
+}
+.travel{
+    width: 600px;;
+    background-color:rgba(0,0, 0,0.5);
+}
+.nav ul{
+    list-style-type: none;
+    background-color:orange;
+    position: fixed;
+    width: 600px;
+    margin: auto;
+}
+li{
+        float: left;
+}
+li a{
+    text-decoration: none;
+    display: block;  
+    color: gray;
+    text-align: center;
+    padding:5px 10px 5px 100px;
+}
+li a:hover{
+    color:white;
+    background-color:rgb(243, 138, 18) ;
+}
+.destination div{
+    float: left;
+    margin: 38px 20px 1px 25px;
+    padding: 5px 0px 0px 0px ;
+}
+.destination label{
+    color:orange;
+    font-size:large
+}
+.destination input{
+    padding: 7px;
+}
+div.vibe{
+    height: 30px;
+    width: 130px;
+    float: left;
+    margin: 10px 33.5px;
+    padding: 5px 0px 3px 0px ;
+}
+div.vibe h3{
+color: orange;
+font-size: large;
+}
+.vibe label{
+    color: white;
+}
+.incrementer{
+    float: left;
+    margin: 30px 10px;
+}
+.incrementer input{
+    margin: 0 30px;
+    padding: 5px;
+}
+.incrementer label{
+    margin: 1px 30px;
+    padding: 5px;
+    color: orange;
+    font-size: large;
+}
+.button{
+     color: white;
+     background-color: orange;
+     width: 150px;
+     padding: 7px;
+     font-size: 16px;
+     border: none;
+     margin: 5px 30px;
+     padding: 5px;
+}
+.button a{
+    text-decoration: none;
+    color: antiquewhite;
+}
+.foot{
+    background-color: orange;
+}
+footer{
+    font-size: small;
+    justify-content: center;
+    margin-block-end: 10px;
+    text-align: center;
+}
+footer p{
+    margin:auto;
+    padding: 7px;
+}
+
+
+
